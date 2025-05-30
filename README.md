@@ -12,20 +12,8 @@ This app is meant to be used as a reference Django app for several DigitalOcean 
 
 Polls is a simple Django app to conduct Web-based polls. For each question, visitors can choose between a fixed number of answers.
 
-1. Add `polls` to your `INSTALLED_APPS` setting like this:
-```python
-INSTALLED_APPS = [
-        ...
-        'polls',
-    ]
-```
-2. Include the polls URLconf in your project `urls.py` like this:
-
-```python
-path('polls/', include('polls.urls')),
-```
-3. Run `python manage.py migrate` to create the polls models.
-4. Create your first super user for with the `python manage.py createsuperuser` and follow the prompt.
-5. Start the development server via `python manage.py runserver` and visit http://127.0.0.1:8000/admin/
+1. Run `python manage.py migrate` to create the polls models.
+2. Create your first super user for with the `python manage.py createsuperuser` and follow the prompt.
+3. Start the development server via `python manage.py runserver` and visit http://127.0.0.1:8000/admin/
    to create a poll (you'll need the Admin app enabled).
-6. Visit http://127.0.0.1:8000/polls/ to participate in the poll.
+4. Visit http://127.0.0.1:8000/polls/ to participate in the poll.
